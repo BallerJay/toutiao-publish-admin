@@ -1,7 +1,7 @@
 <!--
  * @Author: SummerJay__
  * @Date: 2021-08-12 10:34:40
- * @LastEditTime: 2021-08-12 16:16:41
+ * @LastEditTime: 2021-08-13 13:28:32
  * @LastEditors: your name
  * @Description: 登陆组件
  * @FilePath: \toutiao-publish-admin\src\views\Login\index.vue
@@ -61,8 +61,8 @@ export default {
   data() {
     return {
       loginForm: {
-        mobile: '',
-        code: '',
+        mobile: '13911111111',
+        code: '246810',
         agree: false, // 是否同意协议
       },
       loginFormRules: {
@@ -122,10 +122,18 @@ export default {
         // 开启登陆的loading
         this.loginLoading = true
         try {
-          const res = await reqLogin(this.loginForm)
+          const { data: res } = await reqLogin(this.loginForm)
           console.log(res)
           this.$message.success('登陆成功！')
           this.loginLoading = false
+
+          // 将接口返回的用户相关数据放到本地存储，方便应用数据共享
+          // 本地存储只能存储字符串
+          // 如果需要存储对象、数组类型的数据，则把他们转为 JSON 格式字符串进行存储
+          localStorage.setItem('USER_TOKEN', JSON.stringify(res.data))
+
+          // 跳转到首页
+          this.$router.push('/')
         } catch (error) {
           this.$message.error('登录失败,手机号或验证码错误！')
           this.loginLoading = false

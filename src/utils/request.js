@@ -1,7 +1,7 @@
 /*
  * @Author: SummerJay__
  * @Date: 2021-08-12 10:18:09
- * @LastEditTime: 2021-08-12 14:44:20
+ * @LastEditTime: 2021-08-13 13:42:01
  * @LastEditors: your name
  * @Description: 请求模块，基于axios
  * @FilePath: \toutiao-publish-admin\src\utils\request.js
@@ -18,14 +18,23 @@ const instance = axios.create({
 })
 
 // 添加请求拦截器
-axios.interceptors.request.use(function(config) {
+instance.interceptors.request.use(function(config) {
   // 在发送请求之前做些什么
   NProgress.start() // 开启进度条
+  const user = JSON.parse(localStorage.getItem('USER_TOKEN'))
+
+  // 如果有登录用户信息，则统一设置 token
+  if (user) {
+    config.headers.Authorization = `Bearer ${user.token}`
+  }
+
+  // 然后我们就可以在允许请求出去之前定制统一业务功能处理
+  // 例如：统一的设置 token
   return config
 })
 
 // 添加响应拦截器
-axios.interceptors.response.use(
+instance.interceptors.response.use(
   function(response) {
     // 对响应数据做点什么
     NProgress.done() // 停止进度条

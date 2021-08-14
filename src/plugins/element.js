@@ -1,7 +1,7 @@
 /*
  * @Author: SummerJay__
  * @Date: 2021-08-02 22:14:41
- * @LastEditTime: 2021-08-12 11:10:30
+ * @LastEditTime: 2021-08-14 08:42:31
  * @LastEditors: your name
  * @Description:
  * @FilePath: \toutiao-publish-admin\src\plugins\element.js
@@ -44,7 +44,15 @@ import {
   Step,
   CheckboxGroup,
   Checkbox,
-  Upload
+  Upload,
+  Dropdown,
+  DropdownMenu,
+  DropdownItem,
+  DatePicker,
+  Radio,
+  RadioGroup,
+  Image,
+  Loading
 } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
@@ -83,5 +91,13 @@ Vue.use(Step)
 Vue.use(Checkbox)
 Vue.use(CheckboxGroup)
 Vue.use(Upload)
+Vue.use(Dropdown)
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
+Vue.use(DatePicker)
+Vue.use(Radio)
+Vue.use(RadioGroup)
+Vue.use(Image)
+Vue.use(Loading.directive)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
