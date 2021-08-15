@@ -944,6 +944,11 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
+"@juggle/resize-observer@^3.1.2":
+  version "3.3.1"
+  resolved "https://registry.nlark.com/@juggle/resize-observer/download/@juggle/resize-observer-3.3.1.tgz#b50a781709c81e10701004214340f25475a171a0"
+  integrity sha1-tQp4FwnIHhBwEAQhQ0DyVHWhcaA=
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.npm.taobao.org/@mrmlnc/readdir-enhanced/download/@mrmlnc/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -2005,6 +2010,11 @@ big.js@^5.2.2:
   resolved "https://registry.nlark.com/big.js/download/big.js-5.2.2.tgz#65f0af382f578bcdc742bd9c281e9cb2d7768328"
   integrity sha1-ZfCvOC9Xi83HQr2cKB6cstd2gyg=
 
+bignumber.js@^9.0.0:
+  version "9.0.1"
+  resolved "https://registry.npm.taobao.org/bignumber.js/download/bignumber.js-9.0.1.tgz#8d7ba124c882bfd8e43260c67475518d0689e4e5"
+  integrity sha1-jXuhJMiCv9jkMmDGdHVRjQaJ5OU=
+
 binary-extensions@^1.0.0:
   version "1.13.1"
   resolved "https://registry.npm.taobao.org/binary-extensions/download/binary-extensions-1.13.1.tgz?cache=0&sync_timestamp=1610299268308&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbinary-extensions%2Fdownload%2Fbinary-extensions-1.13.1.tgz#598afe54755b2868a5330d2aff9d4ebb53209b65"
@@ -2537,6 +2547,11 @@ coa@^2.0.2:
     chalk "^2.4.1"
     q "^1.1.2"
 
+codemirror@^5.54.0:
+  version "5.62.2"
+  resolved "https://registry.nlark.com/codemirror/download/codemirror-5.62.2.tgz?cache=0&sync_timestamp=1626867956247&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcodemirror%2Fdownload%2Fcodemirror-5.62.2.tgz#bce6d19c9829e6e788f83886d48ecf5c1e106e65"
+  integrity sha1-vObRnJgp5ueI+DiG1I7PXB4QbmU=
+
 collection-visit@^1.0.0:
   version "1.0.0"
   resolved "https://registry.nlark.com/collection-visit/download/collection-visit-1.0.0.tgz#4bc0373c164bc3291b4d368c829cf1a80a59dca0"
@@ -2763,7 +2778,7 @@ core-js@^2.4.0:
   resolved "https://registry.nlark.com/core-js/download/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha1-2TM9+nsGXjR8xWgiGdb2kIWcwuw=
 
-core-js@^3.6.5:
+core-js@^3.4.3, core-js@^3.6.5:
   version "3.16.1"
   resolved "https://registry.nlark.com/core-js/download/core-js-3.16.1.tgz#f4485ce5c9f3c6a7cb18fa80488e08d362097249"
   integrity sha1-9Ehc5cnzxqfLGPqASI4I02IJckk=
@@ -3359,6 +3374,21 @@ electron-to-chromium@^1.3.793:
   resolved "https://registry.nlark.com/electron-to-chromium/download/electron-to-chromium-1.3.802.tgz#0afa989321de3e904ac653ee79e0d642883731a1"
   integrity sha1-CvqYkyHePpBKxlPueeDWQog3MaE=
 
+element-tiptap@^1.26.2:
+  version "1.26.2"
+  resolved "https://registry.npm.taobao.org/element-tiptap/download/element-tiptap-1.26.2.tgz#327a3e8afa38a14ea5a70a302e7d74e7d039fa80"
+  integrity sha1-Mno+ivo4oU6lpwowLn1059A5+oA=
+  dependencies:
+    "@juggle/resize-observer" "^3.1.2"
+    codemirror "^5.54.0"
+    core-js "^3.4.3"
+    prosemirror-utils "^0.9.6"
+    tiptap "^1.26.6"
+    tiptap-extensions "^1.28.6"
+    vue-awesome "^4.0.2"
+    vue-class-component "^7.0.2"
+    vue-property-decorator "^8.3.0"
+
 element-ui@^2.15.5:
   version "2.15.5"
   resolved "https://registry.nlark.com/element-ui/download/element-ui-2.15.5.tgz?cache=0&sync_timestamp=1628057164000&other_urls=https%3A%2F%2Fregistry.nlark.com%2Felement-ui%2Fdownload%2Felement-ui-2.15.5.tgz#dfb376dc5cd60adab21c991bd4fac3e67e5300f4"
@@ -3942,6 +3972,13 @@ fast-levenshtein@~2.0.6:
   resolved "https://registry.npm.taobao.org/fast-levenshtein/download/fast-levenshtein-2.0.6.tgz?cache=0&sync_timestamp=1595428045324&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffast-levenshtein%2Fdownload%2Ffast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
+fault@^1.0.0:
+  version "1.0.4"
+  resolved "https://registry.npm.taobao.org/fault/download/fault-1.0.4.tgz?cache=0&sync_timestamp=1616840635435&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffault%2Fdownload%2Ffault-1.0.4.tgz#eafcfc0a6d214fc94601e170df29954a4f842f13"
+  integrity sha1-6vz8Cm0hT8lGAeFw3ymVSk+ELxM=
+  dependencies:
+    format "^0.2.0"
+
 faye-websocket@^0.11.3:
   version "0.11.4"
   resolved "https://registry.nlark.com/faye-websocket/download/faye-websocket-0.11.4.tgz?cache=0&sync_timestamp=1621894983961&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ffaye-websocket%2Fdownload%2Ffaye-websocket-0.11.4.tgz#7f0d9275cfdd86a1c963dc8b65fcc451edcbb1da"
@@ -4123,6 +4160,11 @@ form-data@~2.3.2:
     asynckit "^0.4.0"
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
+
+format@^0.2.0:
+  version "0.2.2"
+  resolved "https://registry.npm.taobao.org/format/download/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
+  integrity sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
 
 forwarded@0.2.0:
   version "0.2.0"
@@ -4460,7 +4502,7 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.npm.taobao.org/hex-color-regex/download/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha1-TAb8y0YC/iYCs8k9+C1+fb8aio4=
 
-highlight.js@^10.7.1:
+highlight.js@^10.7.1, highlight.js@~10.7.0:
   version "10.7.3"
   resolved "https://registry.nlark.com/highlight.js/download/highlight.js-10.7.3.tgz#697272e3991356e40c3cac566a74eef681756531"
   integrity sha1-aXJy45kTVuQMPKxWanTu9oF1ZTE=
@@ -5218,6 +5260,13 @@ jsesc@~0.5.0:
   resolved "https://registry.npm.taobao.org/jsesc/download/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
   integrity sha1-597mbjXW/Bb3EP6R1c9p9w8IkR0=
 
+json-bigint@^0.3.0:
+  version "0.3.1"
+  resolved "https://registry.npm.taobao.org/json-bigint/download/json-bigint-0.3.1.tgz?cache=0&sync_timestamp=1594724779340&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjson-bigint%2Fdownload%2Fjson-bigint-0.3.1.tgz#0c1729d679f580d550899d6a2226c228564afe60"
+  integrity sha1-DBcp1nn1gNVQiZ1qIibCKFZK/mA=
+  dependencies:
+    bignumber.js "^9.0.0"
+
 json-parse-better-errors@^1.0.1, json-parse-better-errors@^1.0.2:
   version "1.0.2"
   resolved "https://registry.nlark.com/json-parse-better-errors/download/json-parse-better-errors-1.0.2.tgz#bb867cfb3450e69107c131d1c514bab3dc8bcaa9"
@@ -5507,6 +5556,14 @@ lower-case@^1.1.1:
   version "1.1.4"
   resolved "https://registry.nlark.com/lower-case/download/lower-case-1.1.4.tgz#9a2cabd1b9e8e0ae993a4bf7d5875c39c42e8eac"
   integrity sha1-miyr0bno4K6ZOkv31YdcOcQujqw=
+
+lowlight@^1.17.0:
+  version "1.20.0"
+  resolved "https://registry.nlark.com/lowlight/download/lowlight-1.20.0.tgz?cache=0&sync_timestamp=1627894724240&other_urls=https%3A%2F%2Fregistry.nlark.com%2Flowlight%2Fdownload%2Flowlight-1.20.0.tgz#ddb197d33462ad0d93bf19d17b6c301aa3941888"
+  integrity sha1-3bGX0zRirQ2TvxnRe2wwGqOUGIg=
+  dependencies:
+    fault "^1.0.0"
+    highlight.js "~10.7.0"
 
 lru-cache@^4.0.1, lru-cache@^4.1.2:
   version "4.1.5"
@@ -6178,6 +6235,11 @@ ora@^3.4.0:
     log-symbols "^2.2.0"
     strip-ansi "^5.2.0"
     wcwidth "^1.0.1"
+
+orderedmap@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.nlark.com/orderedmap/download/orderedmap-1.1.1.tgz#c618e77611b3b21d0fe3edc92586265e0059c789"
+  integrity sha1-xhjndhGzsh0P4+3JJYYmXgBZx4k=
 
 original@^1.0.0:
   version "1.0.2"
@@ -6896,6 +6958,121 @@ promise-inflight@^1.0.1:
   resolved "https://registry.npm.taobao.org/promise-inflight/download/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
+prosemirror-collab@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npm.taobao.org/prosemirror-collab/download/prosemirror-collab-1.2.2.tgz#8d2c0e82779cfef5d051154bd0836428bd6d9c4a"
+  integrity sha1-jSwOgnec/vXQURVL0INkKL1tnEo=
+  dependencies:
+    prosemirror-state "^1.0.0"
+
+prosemirror-commands@^1.1.4:
+  version "1.1.10"
+  resolved "https://registry.nlark.com/prosemirror-commands/download/prosemirror-commands-1.1.10.tgz#406a6589966e6cd80809cea2d801fb998639b37d"
+  integrity sha1-QGpliZZubNgICc6i2AH7mYY5s30=
+  dependencies:
+    prosemirror-model "^1.0.0"
+    prosemirror-state "^1.0.0"
+    prosemirror-transform "^1.0.0"
+
+prosemirror-dropcursor@^1.3.2:
+  version "1.3.5"
+  resolved "https://registry.nlark.com/prosemirror-dropcursor/download/prosemirror-dropcursor-1.3.5.tgz?cache=0&sync_timestamp=1621931565862&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fprosemirror-dropcursor%2Fdownload%2Fprosemirror-dropcursor-1.3.5.tgz#d2808c17089df0e441ad66016aecc2b6457c8a1f"
+  integrity sha1-0oCMFwid8ORBrWYBauzCtkV8ih8=
+  dependencies:
+    prosemirror-state "^1.0.0"
+    prosemirror-transform "^1.1.0"
+    prosemirror-view "^1.1.0"
+
+prosemirror-gapcursor@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.npm.taobao.org/prosemirror-gapcursor/download/prosemirror-gapcursor-1.1.5.tgz#0c37fd6cbb1d7c46358c2e7397f8da9a8b5c6246"
+  integrity sha1-DDf9bLsdfEY1jC5zl/jamotcYkY=
+  dependencies:
+    prosemirror-keymap "^1.0.0"
+    prosemirror-model "^1.0.0"
+    prosemirror-state "^1.0.0"
+    prosemirror-view "^1.0.0"
+
+prosemirror-history@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.nlark.com/prosemirror-history/download/prosemirror-history-1.1.3.tgz#4f76a1e71db4ef7cdf0e13dec6d8da2aeaecd489"
+  integrity sha1-T3ah5x2073zfDhPextjaKurs1Ik=
+  dependencies:
+    prosemirror-state "^1.2.2"
+    prosemirror-transform "^1.0.0"
+    rope-sequence "^1.3.0"
+
+prosemirror-inputrules@^1.1.2, prosemirror-inputrules@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.nlark.com/prosemirror-inputrules/download/prosemirror-inputrules-1.1.3.tgz#93f9199ca02473259c30d7e352e4c14022d54638"
+  integrity sha1-k/kZnKAkcyWcMNfjUuTBQCLVRjg=
+  dependencies:
+    prosemirror-state "^1.0.0"
+    prosemirror-transform "^1.0.0"
+
+prosemirror-keymap@^1.0.0, prosemirror-keymap@^1.1.2, prosemirror-keymap@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.nlark.com/prosemirror-keymap/download/prosemirror-keymap-1.1.4.tgz#8b481bf8389a5ac40d38dbd67ec3da2c7eac6a6d"
+  integrity sha1-i0gb+DiaWsQNONvWfsPaLH6sam0=
+  dependencies:
+    prosemirror-state "^1.0.0"
+    w3c-keyname "^2.2.0"
+
+prosemirror-model@^1.0.0, prosemirror-model@^1.13.1, prosemirror-model@^1.14.3, prosemirror-model@^1.8.1:
+  version "1.14.3"
+  resolved "https://registry.nlark.com/prosemirror-model/download/prosemirror-model-1.14.3.tgz#a9c250d3c4023ddf10ecb41a0a7a130e9741d37e"
+  integrity sha1-qcJQ08QCPd8Q7LQaCnoTDpdB034=
+  dependencies:
+    orderedmap "^1.1.0"
+
+prosemirror-schema-list@^1.1.4:
+  version "1.1.5"
+  resolved "https://registry.nlark.com/prosemirror-schema-list/download/prosemirror-schema-list-1.1.5.tgz#e7ad9e337ea3d77da6d6a4250f3d7bd51ae980a4"
+  integrity sha1-562eM36j132m1qQlDz171RrpgKQ=
+  dependencies:
+    prosemirror-model "^1.0.0"
+    prosemirror-transform "^1.0.0"
+
+prosemirror-state@^1.0.0, prosemirror-state@^1.2.2, prosemirror-state@^1.3.1, prosemirror-state@^1.3.3:
+  version "1.3.4"
+  resolved "https://registry.nlark.com/prosemirror-state/download/prosemirror-state-1.3.4.tgz#4c6b52628216e753fc901c6d2bfd84ce109e8952"
+  integrity sha1-TGtSYoIW51P8kBxtK/2EzhCeiVI=
+  dependencies:
+    prosemirror-model "^1.0.0"
+    prosemirror-transform "^1.0.0"
+
+prosemirror-tables@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npm.taobao.org/prosemirror-tables/download/prosemirror-tables-1.1.1.tgz#ad66300cc49500455cf1243bb129c9e7d883321e"
+  integrity sha1-rWYwDMSVAEVc8SQ7sSnJ59iDMh4=
+  dependencies:
+    prosemirror-keymap "^1.1.2"
+    prosemirror-model "^1.8.1"
+    prosemirror-state "^1.3.1"
+    prosemirror-transform "^1.2.1"
+    prosemirror-view "^1.13.3"
+
+prosemirror-transform@^1.0.0, prosemirror-transform@^1.1.0, prosemirror-transform@^1.2.1, prosemirror-transform@^1.2.8:
+  version "1.3.2"
+  resolved "https://registry.nlark.com/prosemirror-transform/download/prosemirror-transform-1.3.2.tgz#5620ebe7379e6fae4f34ecc881886cb22ce96579"
+  integrity sha1-ViDr5zeeb65PNOzIgYhssizpZXk=
+  dependencies:
+    prosemirror-model "^1.0.0"
+
+prosemirror-utils@^0.9.6:
+  version "0.9.6"
+  resolved "https://registry.npm.taobao.org/prosemirror-utils/download/prosemirror-utils-0.9.6.tgz#3d97bd85897e3b535555867dc95a51399116a973"
+  integrity sha1-PZe9hYl+O1NVVYZ9yVpROZEWqXM=
+
+prosemirror-view@^1.0.0, prosemirror-view@^1.1.0, prosemirror-view@^1.13.3, prosemirror-view@^1.16.5:
+  version "1.19.0"
+  resolved "https://registry.nlark.com/prosemirror-view/download/prosemirror-view-1.19.0.tgz#f030b610213bc8627c027886e40e2e61d7ad3b40"
+  integrity sha1-8DC2ECE7yGJ8AniG5A4uYdetO0A=
+  dependencies:
+    prosemirror-model "^1.14.3"
+    prosemirror-state "^1.0.0"
+    prosemirror-transform "^1.1.0"
+
 proxy-addr@~2.0.5:
   version "2.0.7"
   resolved "https://registry.nlark.com/proxy-addr/download/proxy-addr-2.0.7.tgz?cache=0&sync_timestamp=1622509170257&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fproxy-addr%2Fdownload%2Fproxy-addr-2.0.7.tgz#f19fe69ceab311eeb94b42e70e8c2070f9ba1025"
@@ -7347,6 +7524,11 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
+
+rope-sequence@^1.3.0:
+  version "1.3.2"
+  resolved "https://registry.nlark.com/rope-sequence/download/rope-sequence-1.3.2.tgz#a19e02d72991ca71feb6b5f8a91154e48e3c098b"
+  integrity sha1-oZ4C1ymRynH+trX4qRFU5I48CYs=
 
 run-async@^2.4.0:
   version "2.4.1"
@@ -8126,6 +8308,61 @@ timsort@^0.3.0:
   resolved "https://registry.npm.taobao.org/timsort/download/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
 
+tiptap-commands@^1.17.1:
+  version "1.17.1"
+  resolved "https://registry.npm.taobao.org/tiptap-commands/download/tiptap-commands-1.17.1.tgz#a8974a26d87db57b2fd4fc56a552520c69e43a4a"
+  integrity sha1-qJdKJth9tXsv1PxWpVJSDGnkOko=
+  dependencies:
+    prosemirror-commands "^1.1.4"
+    prosemirror-inputrules "^1.1.2"
+    prosemirror-model "^1.13.1"
+    prosemirror-schema-list "^1.1.4"
+    prosemirror-state "^1.3.3"
+    prosemirror-tables "^1.1.1"
+    tiptap-utils "^1.13.1"
+
+tiptap-extensions@^1.28.6:
+  version "1.35.2"
+  resolved "https://registry.npm.taobao.org/tiptap-extensions/download/tiptap-extensions-1.35.2.tgz#83dd6ee703ae8c83b58c7608f97253fcc4f1a94c"
+  integrity sha1-g91u5wOujIO1jHYI+XJT/MTxqUw=
+  dependencies:
+    lowlight "^1.17.0"
+    prosemirror-collab "^1.2.2"
+    prosemirror-history "^1.1.3"
+    prosemirror-model "^1.13.1"
+    prosemirror-state "^1.3.3"
+    prosemirror-tables "^1.1.1"
+    prosemirror-transform "^1.2.8"
+    prosemirror-view "^1.16.5"
+    tiptap "^1.32.2"
+    tiptap-commands "^1.17.1"
+    tiptap-utils "^1.13.1"
+
+tiptap-utils@^1.13.1:
+  version "1.13.1"
+  resolved "https://registry.npm.taobao.org/tiptap-utils/download/tiptap-utils-1.13.1.tgz#f2150ded432465d66aa03a5ab333803415cddd20"
+  integrity sha1-8hUN7UMkZdZqoDpaszOANBXN3SA=
+  dependencies:
+    prosemirror-model "^1.13.1"
+    prosemirror-state "^1.3.3"
+    prosemirror-tables "^1.1.1"
+
+tiptap@^1.26.6, tiptap@^1.32.2:
+  version "1.32.2"
+  resolved "https://registry.npm.taobao.org/tiptap/download/tiptap-1.32.2.tgz#cd6259e853652bfc6860758ff44ebb695d5edd1c"
+  integrity sha1-zWJZ6FNlK/xoYHWP9E67aV1e3Rw=
+  dependencies:
+    prosemirror-commands "^1.1.4"
+    prosemirror-dropcursor "^1.3.2"
+    prosemirror-gapcursor "^1.1.5"
+    prosemirror-inputrules "^1.1.3"
+    prosemirror-keymap "^1.1.4"
+    prosemirror-model "^1.13.1"
+    prosemirror-state "^1.3.3"
+    prosemirror-view "^1.16.5"
+    tiptap-commands "^1.17.1"
+    tiptap-utils "^1.13.1"
+
 tmp@^0.0.33:
   version "0.0.33"
   resolved "https://registry.npm.taobao.org/tmp/download/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
@@ -8508,6 +8745,16 @@ vm-browserify@^1.0.1:
   resolved "https://registry.nlark.com/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
+vue-awesome@^4.0.2:
+  version "4.3.1"
+  resolved "https://registry.nlark.com/vue-awesome/download/vue-awesome-4.3.1.tgz#3d5684a931714277c3015e024f35e231e4265fa3"
+  integrity sha1-PVaEqTFxQnfDAV4CTzXiMeQmX6M=
+
+vue-class-component@^7.0.2, vue-class-component@^7.1.0:
+  version "7.2.6"
+  resolved "https://registry.npm.taobao.org/vue-class-component/download/vue-class-component-7.2.6.tgz#8471e037b8e4762f5a464686e19e5afc708502e4"
+  integrity sha1-hHHgN7jkdi9aRkaG4Z5a/HCFAuQ=
+
 vue-eslint-parser@^7.0.0:
   version "7.10.0"
   resolved "https://registry.nlark.com/vue-eslint-parser/download/vue-eslint-parser-7.10.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue-eslint-parser%2Fdownload%2Fvue-eslint-parser-7.10.0.tgz#ea4e4b10fd10aa35c8a79ac783488d8abcd29be8"
@@ -8546,6 +8793,13 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-property-decorator@^8.3.0:
+  version "8.5.1"
+  resolved "https://registry.npm.taobao.org/vue-property-decorator/download/vue-property-decorator-8.5.1.tgz#571a91cf8d2b507f537d79bf8275af3184572fff"
+  integrity sha1-VxqRz40rUH9TfXm/gnWvMYRXL/8=
+  dependencies:
+    vue-class-component "^7.1.0"
+
 vue-router@^3.2.0:
   version "3.5.2"
   resolved "https://registry.nlark.com/vue-router/download/vue-router-3.5.2.tgz?cache=0&sync_timestamp=1628495505697&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue-router%2Fdownload%2Fvue-router-3.5.2.tgz#5f55e3f251970e36c3e8d88a7cd2d67a350ade5c"
@@ -8581,6 +8835,11 @@ vuex@^3.4.0:
   version "3.6.2"
   resolved "https://registry.nlark.com/vuex/download/vuex-3.6.2.tgz#236bc086a870c3ae79946f107f16de59d5895e71"
   integrity sha1-I2vAhqhww655lG8QfxbeWdWJXnE=
+
+w3c-keyname@^2.2.0:
+  version "2.2.4"
+  resolved "https://registry.nlark.com/w3c-keyname/download/w3c-keyname-2.2.4.tgz#4ade6916f6290224cdbd1db8ac49eab03d0eef6b"
+  integrity sha1-St5pFvYpAiTNvR24rEnqsD0O72s=
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"

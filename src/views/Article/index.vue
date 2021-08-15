@@ -1,7 +1,7 @@
 <!--
  * @Author: SummerJay__
  * @Date: 2021-08-13 14:59:29
- * @LastEditTime: 2021-08-14 10:18:34
+ * @LastEditTime: 2021-08-15 08:28:41
  * @LastEditors: your name
  * @Description: 内容管理组件
  * @FilePath: \toutiao-publish-admin\src\views\Article\index.vue
@@ -130,6 +130,7 @@
               icon="el-icon-edit"
               circle
               size="mini"
+              @click="$router.push('/publish?id=' + scope.row.id)"
             ></el-button>
             <el-button
               type="danger"
@@ -240,7 +241,7 @@ export default {
         type: 'warning',
       })
         .then(async () => {
-          const res = await reqDelArticle(articleId)
+          const res = await reqDelArticle(articleId.toString())
           // console.log(res)
           if (res.status !== 204) {
             this.$message.error('删除文章失败！')
