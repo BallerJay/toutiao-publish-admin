@@ -1,7 +1,7 @@
 /*
  * @Author: SummerJay__
  * @Date: 2021-08-11 22:29:33
- * @LastEditTime: 2021-08-14 10:39:59
+ * @LastEditTime: 2021-08-15 15:04:12
  * @LastEditors: your name
  * @Description:
  * @FilePath: \toutiao-publish-admin\src\router\index.js
@@ -13,6 +13,7 @@ import Home from '@/views/Home'
 import Layout from '@/views/Layout'
 import Article from '@/views/Article'
 import Publish from '@/views/Publish'
+import Image from '@/views/Images'
 
 Vue.use(VueRouter)
 
@@ -36,6 +37,10 @@ const routes = [
       {
         path: '/publish',
         component: Publish
+      },
+      {
+        path: '/image',
+        component: Image
       }
     ]
   }

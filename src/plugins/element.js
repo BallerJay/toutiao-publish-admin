@@ -1,7 +1,7 @@
 /*
  * @Author: SummerJay__
  * @Date: 2021-08-02 22:14:41
- * @LastEditTime: 2021-08-14 08:42:31
+ * @LastEditTime: 2021-08-15 15:11:50
  * @LastEditors: your name
  * @Description:
  * @FilePath: \toutiao-publish-admin\src\plugins\element.js
@@ -51,6 +51,7 @@ import {
   DatePicker,
   Radio,
   RadioGroup,
+  RadioButton,
   Image,
   Loading
 } from 'element-ui'
@@ -98,6 +99,7 @@ Vue.use(DatePicker)
 Vue.use(Radio)
 Vue.use(RadioGroup)
 Vue.use(Image)
+Vue.use(RadioButton)
 Vue.use(Loading.directive)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
