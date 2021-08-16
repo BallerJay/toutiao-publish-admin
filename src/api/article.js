@@ -1,7 +1,7 @@
 /*
  * @Author: SummerJay__
  * @Date: 2021-08-13 16:18:32
- * @LastEditTime: 2021-08-15 08:37:51
+ * @LastEditTime: 2021-08-16 13:24:34
  * @LastEditors: your name
  * @Description:
  * @FilePath: \toutiao-publish-admin\src\api\article.js
@@ -53,4 +53,19 @@ export const reqUpdateArticle = (articleId, updateDataObj, draft) => {
 // 获取指定文章
 export const reqGetArticle = articleId => {
   return request.get(`/mp/v1_0/articles/${articleId}`)
+}
+
+// 修改文章评论状态
+export const reqUpdateCommentStatus = (articleId, status) => {
+  return request.put(
+    '/mp/v1_0/comments/status',
+    {
+      allow_comment: status
+    },
+    {
+      params: {
+        article_id: articleId
+      }
+    }
+  )
 }
