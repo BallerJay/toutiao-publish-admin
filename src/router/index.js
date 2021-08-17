@@ -1,7 +1,7 @@
 /*
  * @Author: SummerJay__
  * @Date: 2021-08-11 22:29:33
- * @LastEditTime: 2021-08-16 10:35:14
+ * @LastEditTime: 2021-08-16 14:04:05
  * @LastEditors: your name
  * @Description:
  * @FilePath: \toutiao-publish-admin\src\router\index.js
@@ -15,6 +15,7 @@ import Article from '@/views/Article'
 import Publish from '@/views/Publish'
 import Image from '@/views/Images'
 import Comment from '@/views/Comment'
+import Setting from '@/views/Setting'
 
 Vue.use(VueRouter)
 
@@ -46,6 +47,10 @@ const routes = [
       {
         path: '/comment',
         component: Comment
+      },
+      {
+        path: '/settings',
+        component: Setting
       }
     ]
   }

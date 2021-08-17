@@ -1,7 +1,7 @@
 /*
  * @Author: SummerJay__
  * @Date: 2021-08-12 15:51:52
- * @LastEditTime: 2021-08-13 16:18:23
+ * @LastEditTime: 2021-08-16 21:43:40
  * @LastEditors: your name
  * @Description: 用户相关请求模块
  * @FilePath: \toutiao-publish-admin\src\api\user.js
@@ -27,4 +27,14 @@ export const reqUserProfile = () => {
   //     Authorization: `Bearer ${user.token}`
   //   }
   // })
+}
+
+// 修改用户头像
+export const reqUpdateUser = photoInfo => {
+  return request.patch('/mp/v1_0/user/photo', photoInfo)
+}
+
+// 修改用户基本信息
+export const reqUpdateUserInfo = userInfo => {
+  return request.patch('/mp/v1_0/user/profile', userInfo)
 }

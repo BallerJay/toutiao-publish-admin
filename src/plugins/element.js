@@ -1,7 +1,7 @@
 /*
  * @Author: SummerJay__
  * @Date: 2021-08-02 22:14:41
- * @LastEditTime: 2021-08-15 15:11:50
+ * @LastEditTime: 2021-08-16 14:40:04
  * @LastEditors: your name
  * @Description:
  * @FilePath: \toutiao-publish-admin\src\plugins\element.js
@@ -53,7 +53,8 @@ import {
   RadioGroup,
   RadioButton,
   Image,
-  Loading
+  Loading,
+  Avatar
 } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
@@ -100,6 +101,7 @@ Vue.use(Radio)
 Vue.use(RadioGroup)
 Vue.use(Image)
 Vue.use(RadioButton)
+Vue.use(Avatar)
 Vue.use(Loading.directive)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm

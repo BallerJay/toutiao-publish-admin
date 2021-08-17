@@ -1,7 +1,7 @@
 <!--
  * @Author: SummerJay__
  * @Date: 2021-08-12 21:48:29
- * @LastEditTime: 2021-08-13 14:54:11
+ * @LastEditTime: 2021-08-17 09:20:59
  * @LastEditors: your name
  * @Description: 布局组局
  * @FilePath: \toutiao-publish-admin\src\views\Layout\index.vue
@@ -62,6 +62,12 @@ export default {
   },
   created() {
     this.loadUserProfile()
+  },
+  mounted() {
+    this.$bus.$on('update-user', (data) => {
+      this.user.name = data.name
+      this.user.photo = data.photo
+    })
   },
   methods: {
     async loadUserProfile() {

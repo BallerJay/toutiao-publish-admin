@@ -1,7 +1,7 @@
 /*
  * @Author: SummerJay__
  * @Date: 2021-08-11 22:29:33
- * @LastEditTime: 2021-08-15 10:46:04
+ * @LastEditTime: 2021-08-17 09:03:18
  * @LastEditors: your name
  * @Description:
  * @FilePath: \toutiao-publish-admin\src\main.js
@@ -24,6 +24,9 @@ Vue.use(ElementTiptapPlugin, { /* 插件配置项 */ lang: 'zh' })
 Vue.config.productionTip = false
 
 new Vue({
+  beforeCreate() {
+    Vue.prototype.$bus = this
+  },
   router,
   store,
   render: h => h(App)
