@@ -1,7 +1,7 @@
 <!--
  * @Author: SummerJay__
  * @Date: 2021-08-15 15:02:36
- * @LastEditTime: 2021-08-16 10:17:13
+ * @LastEditTime: 2021-08-17 09:37:03
  * @LastEditors: your name
  * @Description: 素材管理组件
  * @FilePath: \toutiao-publish-admin\src\views\Images\index.vue
@@ -103,7 +103,7 @@
       :append-to-body="true"
     >
       <!-- upload 组价本身就支持请求提交上传操作，
-      说白了你使用它不用自己去写请求方法，upload组价会自动发 
+      说白了你使用它不用自己去写请求方法，upload组价会自动发
       1. 请求方法 默认是就是post
       2. 请求路径，一定是完整路径 action
       3. 请求头 headerss

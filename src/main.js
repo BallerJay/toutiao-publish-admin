@@ -1,7 +1,7 @@
 /*
  * @Author: SummerJay__
  * @Date: 2021-08-11 22:29:33
- * @LastEditTime: 2021-08-17 09:03:18
+ * @LastEditTime: 2021-08-17 10:33:58
  * @LastEditors: your name
  * @Description:
  * @FilePath: \toutiao-publish-admin\src\main.js
@@ -9,7 +9,6 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
 // 引入全局样式
 import '@/style/index.less'
 // 引入elementUi
@@ -28,6 +27,5 @@ new Vue({
     Vue.prototype.$bus = this
   },
   router,
-  store,
   render: h => h(App)
 }).$mount('#app')
