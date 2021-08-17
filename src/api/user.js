@@ -1,7 +1,7 @@
 /*
  * @Author: SummerJay__
  * @Date: 2021-08-12 15:51:52
- * @LastEditTime: 2021-08-16 21:43:40
+ * @LastEditTime: 2021-08-17 09:59:46
  * @LastEditors: your name
  * @Description: 用户相关请求模块
  * @FilePath: \toutiao-publish-admin\src\api\user.js
@@ -37,4 +37,11 @@ export const reqUpdateUser = photoInfo => {
 // 修改用户基本信息
 export const reqUpdateUserInfo = userInfo => {
   return request.patch('/mp/v1_0/user/profile', userInfo)
+}
+
+// 获取粉丝列表数据
+export const reqFansList = params => {
+  return request.get('/mp/v1_0/followers', {
+    params
+  })
 }
