@@ -1,7 +1,7 @@
 <!--
  * @Author: SummerJay__
  * @Date: 2021-08-14 10:38:53
- * @LastEditTime: 2021-08-15 14:31:59
+ * @LastEditTime: 2021-08-18 11:33:02
  * @LastEditors: your name
  * @Description: 发布文章组件
  * @FilePath: \toutiao-publish-admin\src\views\Publish\index.vue
@@ -49,6 +49,28 @@
             <el-radio :label="0">无图</el-radio>
             <el-radio :label="-1">自动</el-radio>
           </el-radio-group>
+          <template v-if="publishForm.cover.type > 0">
+            <!-- <UploadCover
+              v-for="(cover, index) in publishForm.cover.type"
+              :key="cover"
+              @updateCover="onUpdateCover(index, $event)"
+              :coverImage="publishForm.cover.images[index]"
+            /> -->
+            <!-- 当你给子组件提供的数据即要使用还要修改，
+            这个时候我们可以使用 v-model 简化数据绑定
+            v-model="publishForm.cover.images[index]"
+            相当于给子组件传递了一个名字叫value的数据
+            :value='publishForm.cover.images[index]'
+            默认监听 input 事件
+            当事件发生时，它会让绑定数据 = 事件参数
+            @input='publishForm.cover.images[index] = 事件参数'
+            -->
+            <UploadCover
+              v-for="(cover, index) in publishForm.cover.type"
+              :key="cover"
+              v-model="publishForm.cover.images[index]"
+            />
+          </template>
         </el-form-item>
         <el-form-item label="频道" prop="channel_id">
           <el-select v-model="publishForm.channel_id" placeholder="请选择频道">
@@ -99,10 +121,13 @@ import {
   Image,
 } from 'element-tiptap'
 import { reqUploadImage } from '@/api/image'
+import UploadCover from './component/uploadCover.vue'
 export default {
   name: 'Publish',
   components: {
+    // 富文本编辑器
     'el-tiptap': ElementTiptap,
+    UploadCover,
   },
   data() {
     return {
@@ -230,6 +255,10 @@ export default {
       }
       this.$message.success('获取指定文章成功！')
       this.publishForm = res.data
+    },
+    onUpdateCover(index, url) {
+      // console.log(url)
+      this.publishForm.cover.images[index] = url
     },
   },
 }

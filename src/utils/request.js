@@ -1,7 +1,7 @@
 /*
  * @Author: SummerJay__
  * @Date: 2021-08-12 10:18:09
- * @LastEditTime: 2021-08-14 15:45:38
+ * @LastEditTime: 2021-08-18 14:18:26
  * @LastEditors: your name
  * @Description: 请求模块，基于axios
  * @FilePath: \toutiao-publish-admin\src\utils\request.js
@@ -12,6 +12,10 @@ import axios from 'axios'
 import JSONBig from 'json-bigint'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
+import router from '@/router'
+
+// 非组件模块可以这样加载使用 Element的message消息提示
+import { Message } from 'element-ui'
 
 const instance = axios.create({
   baseURL: 'http://api-toutiao-web.itheima.net',
@@ -61,15 +65,32 @@ instance.interceptors.request.use(function(config) {
 // 添加响应拦截器
 instance.interceptors.response.use(
   function(response) {
+    // Any status code that lie within the range of 2xx cause this function to trigger
     // 对响应数据做点什么
     NProgress.done() // 停止进度条
     return response
   },
   function(error) {
+    // Any status codes that falls outside the range of 2xx cause this function to trigger
     // 对响应错误做点什么
     NProgress.done() // 停止进度条
     // 统一处理请求错误,
-    alert('发送请求失败' + error.message || '未知错误')
+    // console.dir(error)
+    if (error.response && error.response.status === 401) {
+      // 跳转到登陆页面
+      localStorage.removeItem('USER_TOKEN')
+      router.push('/login')
+      Message.error('登陆状态无效，请重新登陆')
+    } else if (error.response.status === 403) {
+      // token未携带或已过期
+      Message.error('没有操作权限')
+    } else if (error.response.status === 400) {
+      Message.error('请求参数错误，请检查请求参数')
+      // 客户端参数错误
+    } else if (error.response.status >= 500) {
+      Message.error('服务器内部异常，请稍后重试')
+    }
+    console.log('发送请求失败' + error.message || '未知错误')
     return Promise.reject(error)
   }
 )

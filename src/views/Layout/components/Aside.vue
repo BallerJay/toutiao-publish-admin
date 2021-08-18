@@ -1,7 +1,7 @@
 <!--
  * @Author: SummerJay__
  * @Date: 2021-08-12 22:12:50
- * @LastEditTime: 2021-08-13 15:06:08
+ * @LastEditTime: 2021-08-18 13:29:41
  * @LastEditors: your name
  * @Description: 侧边栏组件
  * @FilePath: \toutiao-publish-admin\src\views\Layout\components\Aside.vue
@@ -35,7 +35,7 @@
       <i class="iconfont iconpublish"></i>
       <span slot="title">发布文章</span>
     </el-menu-item>
-    <el-menu-item index="comment">
+    <el-menu-item index="/comment">
       <i class="iconfont iconcomment"></i>
       <span slot="title">评论管理</span>
     </el-menu-item>

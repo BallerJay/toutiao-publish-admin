@@ -1,7 +1,7 @@
 /*
  * @Author: SummerJay__
  * @Date: 2021-08-11 22:29:33
- * @LastEditTime: 2021-08-17 14:37:33
+ * @LastEditTime: 2021-08-18 14:31:20
  * @LastEditors: your name
  * @Description:
  * @FilePath: \toutiao-publish-admin\src\router\index.js
@@ -17,8 +17,6 @@ import Image from '@/views/Images'
 import Comment from '@/views/Comment'
 import Setting from '@/views/Setting'
 import Fans from '@/views/Fans'
-import FanList from '@/views/Fans/component/fans.vue'
-import Map from '@/views/Fans/component/map.vue'
 
 Vue.use(VueRouter)
 
@@ -57,17 +55,7 @@ const routes = [
       },
       {
         path: '/fans',
-        component: Fans,
-        children: [
-          {
-            path: '/fanlist',
-            component: FanList
-          },
-          {
-            path: '/map',
-            component: Map
-          }
-        ]
+        component: Fans
       }
     ]
   }
